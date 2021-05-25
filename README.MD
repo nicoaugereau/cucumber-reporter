@@ -1,11 +1,8 @@
-Multiple Cucumber HTML Reporter
+Cucumber Reporter
 ===============================
-[![Join the chat at https://gitter.im/wswebcreation/protractor-cucumber-typescript-boilerplate](https://badges.gitter.im/wswebcreation/multiple-cucumber-html-reporter.svg)](https://gitter.im/wswebcreation/multiple-cucumber-html-reporter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![dependencies Status](https://david-dm.org/wswebcreation/multiple-cucumber-html-reporter/status.svg)](https://david-dm.org/wswebcreation/multiple-cucumber-html-reporter) [![Build Status](https://travis-ci.org/wswebcreation/multiple-cucumber-html-reporter.svg?branch=master)](https://travis-ci.org/wswebcreation/multiple-cucumber-html-reporter) [![Coverage Status](https://coveralls.io/repos/github/wswebcreation/multiple-cucumber-html-reporter/badge.svg?branch=master)](https://coveralls.io/github/wswebcreation/multiple-cucumber-html-reporter?branch=master)
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
-[![NPM](https://nodei.co/npm/multiple-cucumber-html-reporter.png)](https://nodei.co/npm/multiple-cucumber-html-reporter/)
-
-Multiple Cucumber HTML Reporter is a reporting module for Cucumber to parse the JSON output to a beautiful report. The difference between all the other reporting modules on the market is that this module has:
+Cucumber Reporter is a reporting module for Cucumber to parse the JSON output to a beautiful report. The difference between all the other reporting modules on the market is that this module has:
 
 - a quick overview of all tested features and scenarios
 - a features overview that can hold multiple runs of the same feature / runs of the same feature on different browsers / devices
@@ -16,46 +13,30 @@ Multiple Cucumber HTML Reporter is a reporting module for Cucumber to parse the 
 
 > **The default time notation in Cucumber is in nanoseconds. When you use a version of Cucumber that uses milliseconds (like CucumberJS 2 and 3) and you want to show the duration you should use [`displayDuration`](./README.MD#displayDuration) AND [`durationInMS = true`](./README.MD#durationinms)**
 
-![Snapshot - Features overview](./docs/images/browsers-features-overview.jpg "Snapshot - Browsers features overview")
-
-A sample can be found [here](https://wswebcreation.github.io/multiple-cucumber-html-reporter/browsers/index.html)
 
 But you can also create a beautiful overview when you don't want to use CucumberJS with browser(meta)data but with custom metadata, see [customMetadata](./README.MD#custommetadata).
 This nice feature has been created by [LennDG](https://github.com/LennDG)
 
-![Snapshot - Features overview](./docs/images/custom-metadata-features-overview.jpg "Snapshot - Custom metadata features overview")
-
-A sample can be found [here](https://wswebcreation.github.io/multiple-cucumber-html-reporter/custom-metadata/index.html)
 
 ## Install
 Install this module locally with the following command:
 
 ``` bash
-npm install multiple-cucumber-html-reporter
+npm install cucumber-reporter
 ```
 
 Save to dependencies or dev-dependencies:
 
 ``` bash
-npm install multiple-cucumber-html-reporter --save
-npm install multiple-cucumber-html-reporter --save-dev
+npm install cucumber-reporter --save
+npm install cucumber-reporter --save-dev
 ```
-
-## Compatibility
-Multiple Cucumber HTML Reporter **now works with CucumberJS 1, 2, 3 and 4**.
-
-## Usage
-> **If you are using Protractor I would advise you to use [protractor-multiple-cucumber-html-reporter-plugin](https://github.com/wswebcreation/protractor-multiple-cucumber-html-reporter-plugin).**
-
-> **If you are using [webdriver.io](http://webdriver.io/) please check [WEBDRIVER.IO.MD](./docs/WEBDRIVER.IO.MD) for usage.**
-
-> **It provides `multiple-cucumber-html-reporter` and some nice integration features that will make using Protractor + CucumberJS 1/2/3 nicely integrate with only a few lines of code.**
 
 ### cucumber-js 2.x and lower
 Multiple Cucumber HTML Reporter transforms the Cucumber JSON output to a beautiful report. In order to let this happen add the piece of code that is placed below to CucumberJS `AfterFeatures`-hook.
 
 ```javascript
-const report = require('multiple-cucumber-html-reporter');
+const report = require('cucumber-reporter');
 
 report.generate({
 	jsonDir: './path-to-your-json-output/',
@@ -143,9 +124,9 @@ This will disable the log so will **NOT** see this.
 
 ```shell
 =====================================================================================
-    Multiple Cucumber HTML report generated in:
+    Cucumber report generated in:
 
-    /Users/wswebcreation/multiple-cucumber-html-reporter/.tmp/index.html
+    /Users/jdoe/cucumber-reporter/.tmp/index.html
 ========================================================================
 ```
 ### `pageTitle`
@@ -259,19 +240,12 @@ metadata: [
     ]
 ```
 
-On the features overview page the custom metadata is shown like:
-![Snapshot - Features overview custom metadata](./docs/images/features-custom-metadata.jpg "Snapshot - Features overview custom metadata")
-
 >**IMPORTANT:**
 > This does not work correctly if features have different sets of metadata. Try to avoid this situation.
 
 ### `customData`
 - **Type:** `object`
 - **Mandatory:** No
-
-You can add a custom data block to the report like this
-
-![Snapshot - Features overview custom data](./docs/images/custom-data.jpg "Snapshot - Features overview custom data")
 
 ```js
 customData: {
@@ -378,14 +352,6 @@ cucumberJSON[0].metadata = metadata;
 
 >If no correct value is provided the `?`-icon with the text `not known` is shown
 
-### Metadata example features overview
-![Snapshot - Features overview browser / device info](./docs/images/overview-metadata.jpg "Snapshot - Features overview browser / device info")
-
-### Metadata example scenario with and without known data
-![Snapshot - Scenario browser / device info](./docs/images/scenario-browser-metadata.jpg "Snapshot - Scenario browser / device info")
-![Snapshot - Scenario app / device info](./docs/images/scenario-app-metadata.jpg "Snapshot - Scenario app / device info")
-![Snapshot - Scenario browser / device info not known](./docs/images/scenario-no-metadata.jpg "Snapshot - Scenario browser / device info not known")
-
 ## FAQ
 ### Only 1 report is shown in the features overview table
 It could be that the name of the Cucumber JSON file that has been saved is not unique (enough).
@@ -427,9 +393,6 @@ You can attach JSON at any time to a Cucumber JSON file. You can add them during
 
 > Check the framework you are using to attach JSON data to the JSON file.
 
-## Changelog and Releases
-The Changelog and releases can be found [here](https://github.com/wswebcreation/multiple-cucumber-html-reporter/releases)
-
 ## Contributing
 How to contribute can be found [here](./docs/CONTRIBUTING.md)
 
@@ -438,5 +401,3 @@ In the search for a reporting tools for Cucumber I found a few tools that helped
 
 - [cucumber-html-repository](https://github.com/gkushang/cucumber-html-reporter)
 - [cucumber-html-report](https://github.com/leinonen/cucumber-html-report)
-- [cucumber-protractor-report](https://github.com/JesterXL/cucumber-protractor-report)
-- [grunt-protractor-cucumber-html-report](https://github.com/robhil/grunt-protractor-cucumber-html-report)
