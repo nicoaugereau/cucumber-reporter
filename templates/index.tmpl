@@ -11,7 +11,7 @@
    @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,500i,600,700");
         :root{--blue: #005792;--indigo: #7f3ddb;--purple: #9964e3;--pink: #e54e9a;--red: #fd5f00;--orange: #ff7d47;--yellow: #fda700;--green: #68ca66;--teal: #21AE8C;--cyan: #17a2b8;--white: #fff;--gray: #798892;--gray-dark: #3c484f;--primary: #005792;--secondary: #798892;--passed: #21AE8C;--info: #1A86D0;--pending: #fda700;--danger: #fd5f00;--light: #f8f9fa;--dark: #3c484f;--primary-light: #dee4ee;--passed-light: #ecfaec;--info-light: #f2fafa;--pending-light: #fdf7e6;--danger-light: #fff2ef;--inverse: #002B49;--gray: #d7dfe6;--default: #e9ecef;--breakpoint-xs: 0;--breakpoint-sm: 576px;--breakpoint-md: 768px;--breakpoint-lg: 992px;--breakpoint-xl: 1200px;--font-family-sans-serif: "Montserrat", sans-serif;--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}
         *,*::before,*::after{box-sizing:border-box}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}figcaption,figure,footer,header,main,section{display:block}body{margin:0;font-family:"Montserrat",sans-serif;font-size:1rem;font-weight:300;line-height:1.55;color:#495057;text-align:left;background-color:#f9fbfd}[tabindex="-1"]:focus:not(:focus-visible){outline:0 !important}h1,h2,h4,h5{margin-top:0;margin-bottom:.5rem}p{margin-top:0;margin-bottom:1rem}small{font-size:76%;color:#798892}a{color:#218bc3;text-decoration:none;background-color:transparent}a:hover{color:#165c82;text-decoration:underline}figure{margin:0 0 1rem}table{border-collapse:collapse}th{text-align:inherit}label{display:inline-block;margin-bottom:.5rem}
-        button{border-radius:0; min-width:80px}button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color}input,button{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,input{overflow:visible}button{text-transform:none}button{-webkit-appearance:button}button:not(:disabled),[type="button"]:not(:disabled),[type="reset"]:not(:disabled),[type="submit"]:not(:disabled){cursor:pointer}button::-moz-focus-inner{padding:0;border-style:none}input[type="radio"]{box-sizing:border-box;padding:0}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}h1,h2,h4,h5{margin-bottom:.5rem;font-weight:400;line-height:1.2}h1{font-size:2.0rem}h2{font-size:2rem}h4{font-size:1.5rem}h5{font-size:1.25rem}small{font-size:76%;font-weight:400}
+        button{border-radius:0; min-width:80px}button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color}input,button{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,input{overflow:visible}button{text-transform:none}button{-webkit-appearance:button}button:not(:disabled),[type="button"]:not(:disabled),[type="reset"]:not(:disabled),[type="submit"]:not(:disabled){cursor:pointer}button::-moz-focus-inner{padding:0;border-style:none}input[type="radio"]{box-sizing:border-box;padding:0}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}h1,h2,h4,h5{margin-bottom:.5rem;font-weight:400;line-height:1.2}h1{font-size:2.5rem}h2{font-size:2rem}h4{font-size:1.5rem}h5{font-size:1.25rem}small{font-size:76%;font-weight:400}
         .row{width:100%;display:flex;flex-wrap:wrap;margin:0}.col-6,.col-10,.col-sm-5,.col-sm-7,.col-sm-12,.col-md-4,.col-md-6,.col-lg-6,.col-xl-2,.col-xl-4{position:relative;width:100%;padding-right:20px;padding-left:20px}.col-6{flex:0 0 50%;max-width:50%}.col-10{flex:0 0 83.3333333333%;max-width:83.3333333333%}
         @media (min-width: 576px){.col-sm-5{flex:0 0 41.6666666667%;max-width:41.6666666667%}.col-sm-7{flex:0 0 58.3333333333%;max-width:58.3333333333%}.col-sm-12{flex:0 0 100%;max-width:100%}h5{font-size: 1.15rem;}}
         @media (min-width: 768px){.col-md-4{flex:0 0 33.3333333333%;max-width:33.3333333333%}.col-md-6{flex:0 0 50%;max-width:50%}}
@@ -22,12 +22,13 @@
         .btn:focus{outline:0;box-shadow:0 0 0 .2rem rgba(0,87,146,0.25)}.btn:disabled{opacity:.65;box-shadow:none}.btn:not(:disabled):not(.disabled){cursor:pointer}.btn:not(:disabled):not(.disabled):active,.btn:not(:disabled):not(.disabled).active{box-shadow:inset 0 3px 5px rgba(0,0,0,0.125)}.btn:not(:disabled):not(.disabled):active:focus,.btn:not(:disabled):not(.disabled).active:focus{box-shadow:0 0 0 .2rem rgba(0,87,146,0.25),inset 0 3px 5px rgba(0,0,0,0.125)}.btn-primary:not(:disabled):not(.disabled):active,.btn-primary:not(:disabled):not(.disabled).active{color:#fff;background-color:#00395f;border-color:#003152}.btn-primary:not(:disabled):not(.disabled):active:focus,.btn-primary:not(:disabled):not(.disabled).active:focus{box-shadow:inset 0 3px 5px rgba(0,0,0,0.125),0 0 0 .2rem rgba(38,112,162,0.5)}
         .btn-gray:not(:disabled):not(.disabled):active,.btn-gray:not(:disabled):not(.disabled).active{color:#29323a;background-color:#dae0e5;border-color:#c4ccd5}.btn-gray:not(:disabled):not(.disabled):active:focus,.btn-gray:not(:disabled):not(.disabled).active:focus{box-shadow:inset 0 3px 5px rgba(0,0,0,0.125),0 0 0 .2rem rgba(204,208,212,0.5)}.btn-outline:not(:disabled):not(.disabled):active,.btn-outline:not(:disabled):not(.disabled).active{color:#fff;background-color:rgba(0,0,0,0);border-color:#dfdfdf}.btn-outline:not(:disabled):not(.disabled):active:focus,.btn-outline:not(:disabled):not(.disabled).active:focus{box-shadow:inset 0 3px 5px rgba(0,0,0,0.125),0 0 0 .2rem rgba(255,255,255,0.5)}
         .btn-failed{color:#fff;background-color:#fa0f36;border-color:#e90e25;box-shadow:inset 0 1px 0 rgba(255,255,255,0.15),0 1px 1px rgba(0,0,0,0.075)}
-        .btn-passed{;color:#fff;background-color:#26b526;border-color:#1bbd1b;box-shadow:inset 0 1px 0 rgba(255,255,255,0.15),0 1px 1px rgba(0,0,0,0.075)}
+        .btn-passed{color:#fff;background-color:#26b526;border-color:#1bbd1b;box-shadow:inset 0 1px 0 rgba(255,255,255,0.15),0 1px 1px rgba(0,0,0,0.075)}
         .btn-pending{color:#fff;background-color:#666;border-color:#333;box-shadow:inset 0 1px 0 rgba(255,255,255,0.15),0 1px 1px rgba(0,0,0,0.075)}
         .btn-blocked{color:#fff;background-color:#f7bd1e;border-color:#e6ac0d;box-shadow:inset 0 1px 0 rgba(255,255,255,0.15),0 1px 1px rgba(0,0,0,0.075)}
         .btn-skipped{color:#fff;background-color:#66ccff;border-color:#55bbee;box-shadow:inset 0 1px 0 rgba(255,255,255,0.15),0 1px 1px rgba(0,0,0,0.075)}
         .btn-ambigous{color:#fff;background-color:#819888;border-color:#708777;box-shadow:inset 0 1px 0 rgba(255,255,255,0.15),0 1px 1px rgba(0,0,0,0.075)}
-        .custom-control-input:focus:not(:checked) ~ .custom-control-label::before{border-color:#139fff}.custom-control-input:not(:disabled):active ~ .custom-control-label::before{color:#fff;background-color:#46b4ff;border-color:#46b4ff;box-shadow:}.close:not(:disabled):not(.disabled):hover,.close:not(:disabled):not(.disabled):focus{opacity:.75}.d-flex{display:flex !important}
+        .btn-undefined{color:#fff;background-color:#cc00cc;border-color:#ff00ff;box-shadow:inset 0 1px 0 rgba(255,255,255,0.15),0 1px 1px rgba(0,0,0,0.075)}
+        .custom-control-input:focus:not(:checked) ~ .custom-control-label::before{border-color:#139fff}.custom-control-input:not(:disabled):active ~ .custom-control-label::before{color:#fff;background-color:#46b4ff;border-color:#46b4ff;box-shadow:none}.close:not(:disabled):not(.disabled):hover,.close:not(:disabled):not(.disabled):focus{opacity:.75}.d-flex{display:flex !important}
         .flex-wrap{flex-wrap:wrap !important}.justify-content-between{justify-content:space-between !important}.align-items-center{align-items:center !important}
         @supports (position: sticky){}.h-100{height:100% !important}.mb-0{margin-bottom:0 !important}.p-0{padding:0 !important}.pb-0{padding-bottom:0 !important}.p-1{padding:.25rem !important}.pb-1{padding-bottom:.25rem !important}.px-3{padding-right:1rem !important}.pl-3,.px-3{padding-left:1rem !important}.pl-4{padding-left:1.5rem !important}.text-dark{color:#3c484f !important}.text-muted{color:#798892 !important}
         @media print{*,*::before,*::after{text-shadow:none !important;box-shadow:none !important}a:not(.btn){text-decoration:underline}thead{display:table-header-group}tr{page-break-inside:avoid}p,h2{orphans:3;widows:3}h2{page-break-after:avoid}@page{size:a3}body{min-width:992px !important}.table{border-collapse:collapse !important}.table td,.table th{background-color:#fff !important}}
@@ -54,7 +55,7 @@
         @font-face{font-family:"Flaticon";src:url("../fonts/flaticon/Flaticon.eot");src:url("../fonts/flaticon/Flaticon.eot?#iefix") format("embedded-opentype"),url("../fonts/flaticon/Flaticon.woff") format("woff"),url("../fonts/flaticon/Flaticon.ttf") format("truetype"),url("../fonts/flaticon/Flaticon.svg#Flaticon") format("svg");font-weight:normal;font-style:normal}
         @media screen and (-webkit-min-device-pixel-ratio: 0){@font-face{font-family:"Flaticon";src:url("../fonts/flaticon/Flaticon.svg#Flaticon") format("svg")}}          
         /* Donut */
-        .charts{margin:0;padding:0;width:100%;min-height:auto}.tests{width:100%;height:100%;padding-right:50px;min-height:auto}.pie-chart{background-color:#fefefe;position:relative;width:100%%;min-height:220px;margin:0}.pie-chart h2{position:absolute;margin:1rem}figcaption{width:160px;position:absolute;bottom:1em;right:1em;font-size:smaller;text-align:right}.chart-legend span:after{display:inline-block;content:"";width:.8em;height:.8em;margin-left:.4em;border-radius:.2em;background:currentColor}
+        .charts{margin:0;padding:0;width:100%;min-height:auto}.tests{width:100%;height:100%;padding-right:50px;min-height:auto}.pie-chart{background-color:#fefefe;position:relative;width:100%;min-height:220px;margin:0}.pie-chart h2{position:absolute;margin:1rem}figcaption{width:160px;position:absolute;bottom:1em;right:1em;font-size:smaller;text-align:right}.chart-legend span:after{display:inline-block;content:"";width:.8em;height:.8em;margin-left:.4em;border-radius:.2em;background:currentColor}
         /*button{-webkit-writing-mode:horizontal-tb!important;text-rendering:auto;letter-spacing:normal;word-spacing:normal;text-transform:none;text-indent:0;text-shadow:none;display:inline-block;text-align:center;align-items:flex-start;cursor:default;box-sizing:border-box;margin:0;font:400 13.3333px Arial;padding:1px 6px;border-width:2px;border-style:outset;border-color:#5fb3eb;border-image:initial}button,select{text-transform:none}button,input{overflow:visible}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}*/
         .suite--list{list-style-type:none;margin:0;padding:0}.suite--component{box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);margin:0 0 24px}.suite--header{border-bottom:1px solid #ccc}.suite--header-btn{background:#fff;border:none;cursor:pointer;padding:12px 16px;text-align:left;width:100%}.suite--title{display:-webkit-flex;display:flex;font-size:21px;margin:0}.test--list{list-style-type:none;margin:0;padding:0}
         .test--component{padding:4px;border-bottom:1px solid #ccc}.test--title{line-height:1.5;padding-top:3px;white-space:normal}.test--body-wrap,.test--header-btn{border-left-color:#4caf50;border-left-color:var(--green500)}
@@ -65,8 +66,9 @@
         ul.test--list.blocked{border-left:3px solid orange;color:#f7bd1e}h4.blocked:before{content:'\26AC\0020'}span.blocked:before{font-weight:normal;color:#f7bd1e;content:'\25c9\0020 '}
         ul.test--list.pending{border-left:3px solid 99ddff;color:#88ccee}h4.pending:before{content:'\26AC\0020'}span.pending:before{font-weight:normal;color:#88ccee;content:'\25c9\0020 '}
         ul.test--list.skipped{border-left:3px solid #666;color:#333}h4.skipped:before{content:'\26AC\0020'}span.skipped:before{font-weight:normal;color:#666;content:'\25c9\0020 '}
-        .fa-mobile:before{content:"\1F4F1"}.fa-desktop:before{content:'\1F4BB'}
-        .clock{text-align:right; }.clock:after{content:' \0023F1 ';}
+        ul.test--list.undefined{border-left:3px solid #cc00cc;color:#e600e6}h4.undefined:before{content:'\26AC\0020'}span.undefined:before{font-weight:normal;color:#cc00cc;content:'\25c9\0020 '}
+        .info{white-space: pre-line}.fa-mobile:before{content:"\1F4F1"}.fa-desktop:before{content:'\1F4BB'}
+        .clock{text-align:right; }.clock:after{content:' \0023F1 ';}.featureURI{font-size:11px}
         .expand-button {position: relative;vertical-align:middle}
         .accordion-toggle .expand-button:after{position: absolute;transform: translate(0, -50%); content:' - ';}
         .accordion-toggle.collapsed .expand-button:after{content:' + ';}
@@ -75,11 +77,12 @@
         .dashboard-widget-content {padding-top: 9px;}table {width: 100%;}table {width:100%;display:table;border-spacing: 0;border-collapse: collapse;}
         tbody {display: table-row-group;vertical-align: middle;border-color: inherit;}
         table.quick-list tr {border-bottom: 1px solid #efefef;}
-        question-circle{content: '?';display: inline-block;font-family: sans-serif;font-weight: bold;text-align: center;width: 1.8ex;height: 1.8ex;font-size: 1.4ex;line-height: 1.8ex;border-radius: 1.2ex;margin-right: 4px;padding: 1px;color: white;background: black;text-decoration: none;}.result-data{text-align:right}
+        .question-circle{content: ' (?) ';display: inline-block;font-family: sans-serif;font-weight: bold;text-align: center;width: 1.8ex;height: 1.8ex;font-size: 1.4ex;line-height: 1.8ex;border-radius: 1.2ex;margin-right: 4px;padding: 1px;color: white;background: black;text-decoration: none;}.result-data{text-align:right}
         td.result-passed:before{font-weight:normal;content:'\25c9\0020 ';color:#26b526}td.result-failed:before{font-weight:normal;content:'\25c9\0020 ';color:#fa0f36}
         td.result-ambigous:before{font-weight:normal;content:'\25c9\0020 ';color:#819888}td.result-blocked:before{font-weight:normal;content:'\25c9\0020 ';color:#f7bd1e}
         td.result-pending:before{font-weight:normal;content:'\25c9\0020 ';color:#99ddff}td.result-skipped:before{font-weight:normal;content:'\25c9\0020 ';color:#666}
-        span, table.quick-list td {line-height: 28px;}
+        td.result-notDefined:before{font-weight:normal;content:'\25c9\0020 ';color:#cc00cc}
+        span, table.quick-list td {line-height: 28px;}.trophy:after{padding:20px;font-weight:normal;font-size:36px;content:'\1F3C6';color:#666}
         span.duration{float:right}span.duration:after,td.duration:after{content:' \0023F1 '}
         .meta-data-title, table.quick-list td.meta-data-title {display: inline-block;min-width: 75px;font-weight: bold;}
         .keyword{color:darkblue;font-weight:bold;}.highlight{font-size:14px;}
@@ -92,8 +95,7 @@
 <body>
     <div class="content-wrap">
         <main id="content" class="content">
-            <h1 class="page-title"><%= reportName %>
-            </h1>
+            <h1 class="page-title"><%= reportName %></h1>
             <div class="tabset">
                 <input type="radio" name="tabset" id="tab1" aria-controls="summary" checked>
                 <label for="tab1">Summary</label>
@@ -153,6 +155,14 @@
                                                         <td class="result-data"><%= suite.scenarios.pending %> scenarios</td>
                                                         <td class="result-data"><%= suite.steps.pending %> <small>steps</small></td>
                                                     </tr>
+                                                    <% if (suite.scenarios.notDefined !=0) { %>
+                                                    <tr>
+                                                        <td class="meta-data-title result-notDefined">Not defined</td>
+                                                        <td class="result-data"><%= suite.featureCount.notdefinedPercentage %> %</td>
+                                                        <td class="result-data"><%= suite.scenarios.notDefined %> scenarios</td>
+                                                        <td class="result-data"><%= suite.steps.notDefined %> <small>steps</small></td>
+                                                    </tr>
+                                                    <% } %>
                                                 </table>
                                             </div>
                                         </section>
@@ -195,10 +205,10 @@
                                                 </thead>
                                                 <tbody class="text-dark">
                                                     <% _.each(suite.features, function(feature, featureIndex) { %>
-                                                    <% if (feature.isFailed || feature.isAmbiguous || feature.isBlocked || feature.isPending || feature.isSkipped) { %>
+                                                    <% if (feature.isFailed || feature.isAmbiguous || feature.isBlocked || feature.isPending || feature.isSkipped || feature.isNotdefined) { %>
                                                         <tr>
                                                         <% var colNumber=3; %>
-                                                            <td class="pl-4 fw-normal"><%= feature.name %></td>
+                                                            <td class="pl-4 fw-normal"><%= feature.name %> <p class="featureURI"><%= feature.uri %></p></td>
                                                             <td class="text-center">
                                                                 <% if (feature.tags) { %>
                                                                 <% var amount = feature.tags.length; %>
@@ -209,8 +219,6 @@
                                                                 <% } %>
                                                             </td>
                                                             <td class="text-center">
-                                                                <% var statusIcon; %>
-                                                                <% var status; %>
                                                                 <% if (feature.isFailed) { %>
                                                                 <span class="btn btn-xs p-1 px-3 btn-failed">Failed</span>
                                                                 <% } else if (feature.isAmbiguous) { %>
@@ -221,6 +229,8 @@
                                                                 <span class="btn btn-xs p-1 px-3 btn-pending">Pending</span>
                                                                 <% } else if (feature.isSkipped) { %>
                                                                 <span class="btn btn-xs p-1 px-3 btn-skipped">Skipped</span>
+                                                                <% } else if (feature.isNotdefined) { %>
+                                                                <span class="btn btn-xs p-1 px-3 btn-undefined">Not defined</span>
                                                                 <% } else { %>
                                                                 <span class="btn btn-xs p-1 px-3 btn-passed">Passed</span>
                                                                 <% } %>
@@ -230,7 +240,7 @@
                                                                 <td>
                                                                     <% var device; %>
                                                                     <% if (feature.metadata.device === 'not known' || feature.metadata.device === '') { %>
-                                                                    <% device = '<i class="fa fa-question-circle not-defined-color fa-lg"></i> not known'; %>
+                                                                    <% device = '<i class="fa question-circle fa-lg"></i> not known'; %>
                                                                     <% } else { %>
                                                                     <% device = feature.metadata.device; %>
                                                                     <% } %>
@@ -248,7 +258,7 @@
                                                                     feature.metadata.platform.name.toLowerCase() === 'linux') { %>
                                                                     <% platformName = 'linux'; %>
                                                                     <% } else { %>
-                                                                    <% platformName = 'question-circle not-defined-color'; %>
+                                                                    <% platformName = ' (?) '; %>
                                                                     <% } %>
                                                                     <%= platformName %>
                                                                     <%= feature.metadata.platform.version %>
@@ -281,7 +291,7 @@
                                                                 <div class="row">
                                                                     <ul style="margin: 0 20px 0 20px;padding: 0 20px 0 20px; width:100%">
                                                                         <header>
-                                                                            <% if (feature.isFailed || feature.isAmbiguous || feature.isBlocked || feature.isPending || feature.isSkipped) { %>
+                                                                            <% if (feature.isFailed || feature.isAmbiguous || feature.isBlocked || feature.isPending || feature.isSkipped || feature.isNotdefined) { %>
                                                                             <details open>
                                                                             <% } else { %>
                                                                             <details>
@@ -291,7 +301,7 @@
                                                                                     <% _.each(feature.elements, function(scenario, scenarioIndex) { %>
                                                                                         <li class="test--component">
                                                                                             <header>
-                                                                                            <% if (scenario.isFailed || scenario.isAmbiguous || scenario.isBlocked || scenario.isPending || scenario.isSkipped) { %>
+                                                                                            <% if (scenario.isFailed || scenario.isAmbiguous || scenario.isBlocked || scenario.isPending || scenario.isSkipped || feature.isNotdefined) { %>
                                                                                             <details open>
                                                                                             <% } else { %>
                                                                                             <details>
@@ -448,7 +458,6 @@
                                                                                                 </div>
                                                                                             </details>
                                                                                             </header>
-                                                                                            
                                                                                         </li>
                                                                                     <% }); %>
                                                                                     </ul>
@@ -464,7 +473,7 @@
                                                 </tbody>
                                             </table>
                                         <% } else { %>
-                                            <tr><td>No tests failed</td></tr>
+                                            <tr><td style="text-align:center"><p>No tests failed</p><p class="trophy"></p></td></tr>
                                         <% } %>
                                         </div>
                                     </div>
@@ -517,8 +526,6 @@
                                                         <% } %>
                                                     </td>
                                                     <td class="text-center">
-                                                        <% var statusIcon; %>
-                                                        <% var status; %>
                                                         <% if (feature.isFailed) { %>
                                                         <span class="btn btn-xs p-1 px-3 btn-failed">Failed</span>
                                                         <% } else if (feature.isAmbiguous) { %>
@@ -529,6 +536,8 @@
                                                         <span class="btn btn-xs p-1 px-3 btn-pending">Pending</span>
                                                         <% } else if (feature.isSkipped) { %>
                                                         <span class="btn btn-xs p-1 px-3 btn-skipped">Skipped</span>
+                                                        <% } else if (feature.isNotdefined) { %>
+                                                        <span class="btn btn-xs p-1 px-3 btn-undefined">Not defined</span>
                                                         <% } else { %>
                                                         <span class="btn btn-xs p-1 px-3 btn-passed">Passed</span>
                                                         <% } %>
@@ -538,7 +547,7 @@
                                                         <td>
                                                             <% var device; %>
                                                             <% if (feature.metadata.device === 'not known' || feature.metadata.device === '') { %>
-                                                            <% device = '<i class="fa fa-question-circle not-defined-color fa-lg"></i> not known'; %>
+                                                            <% device = '<i class="fa question-circle fa-lg"></i> not known'; %>
                                                             <% } else { %>
                                                             <% device = feature.metadata.device; %>
                                                             <% } %>
@@ -556,7 +565,7 @@
                                                             feature.metadata.platform.name.toLowerCase() === 'linux') { %>
                                                             <% platformName = 'linux'; %>
                                                             <% } else { %>
-                                                            <% platformName = 'question-circle not-defined-color'; %>
+                                                            <% platformName = ' ? '; %>
                                                             <% } %>
                                                             <%= platformName %>
                                                             <%= feature.metadata.platform.version %>
